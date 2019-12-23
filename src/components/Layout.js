@@ -35,18 +35,23 @@ class Layout extends Component {
   constructor (props) {
     super(props)
     this.state = { isActive: false }
-
+    this.toggleNavbar = this.toggleNavbar.bind(this)
   }
 
-
+  toggleNavbar () {
+    this.setState({ isActive: !this.state.isActive })
+  }
 
   render () {
     return (
-<>
-        <Helmet>
+ 
+ <>
+       <Helmet>
+
+
           <title>{config.siteTitle}</title>
           <meta name='description' content={config.siteDescription} />
- 
+        
         
         <meta property="og:type" content="business.business" />
         <meta property="og:title" content={config.siteTitle} />
@@ -129,8 +134,8 @@ class Layout extends Component {
 
 
       </Helmet>
-
-
+       
+ 
       <Navbar />
       <PopContact />
   
@@ -142,8 +147,9 @@ class Layout extends Component {
 
       <Install />
       <Footer />
-       
-</>
+     </>
+        
+
 
        
        
