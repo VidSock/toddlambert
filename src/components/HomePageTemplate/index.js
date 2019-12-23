@@ -16,6 +16,7 @@ const CustomBox = styled.div`
 
 .intro img{border-radius:6px !important;}
 
+/*
 .intro:before{
 	content: "Front-end Design & Development";
 
@@ -26,7 +27,9 @@ justify-content: center;
 font-size:280%; color:#f8f8fc; text-shadow: 12px 7px 15px 12px black;
 animation: poof 1.0s forwards;
 animation-delay: 1.0s;
+top:0 !important;
 }
+*/
 
 /*
 .boom{
