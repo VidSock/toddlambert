@@ -8,12 +8,12 @@ module.exports = {
   siteRss: '/rss.xml',
   siteFBAppID: '', // FB Application ID for using app insights
   googleTagManagerID: '', // GTM tracking ID.
-  disqusShortname: 'gatsby-business-starter', // Disqus shortname.
-  userName: 'Vaibhav Sharma',
-  userTwitter: 'vaibhaved',
-  userLocation: 'Delhi NCR, India',
+  disqusShortname: 'toddlambert', // Disqus shortname.
+  userName: 'twilightscapes',
+  userTwitter: 'toddlambert',
+  userLocation: 'Gulf Coast, USA',
   userDescription: '',
-  copyright: 'Copyright © Gatsby Starter Business 2018-2019. All Rights Reserved.', // Copyright string for the footer of the website and RSS feed.
+  copyright: 'Copyright © Todd Lambert Enterprises 1999-2019. All Rights Reserved.', // Copyright string for the footer of the website and RSS feed.
   themeColor: '#00d1b2', // Used for setting manifest and progress theme colors.
   backgroundColor: '#222222', // Used for setting manifest background color.
 }

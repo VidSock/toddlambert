@@ -1,9 +1,14 @@
-import React from 'react'
+import React, { Component } from 'react'
+import { Link } from 'gatsby'
 import Helmet from 'react-helmet'
 import Offerings from '../Offerings'
 import Testimonials from '../Testimonials'
 import PropTypes from 'prop-types'
-
+import Image from '../Image';
+import { graphql } from 'gatsby'
+import { HTMLContent } from '../Content'
+import ArticleTemplate from '../ArticleTemplate'
+// import { Link } from 'gatsby'
 import styled from "styled-components"
 
 const CustomBox = styled.div`
@@ -11,19 +16,17 @@ const CustomBox = styled.div`
 
 .intro img{border-radius:6px !important;}
 
-/*
 .intro:before{
-	content: "A pioneer in night photography";
+	content: "Front-end Design & Development";
 
 position:absolute;
 display: flex;
 align-items: center;
 justify-content: center;
 font-size:280%; color:#f8f8fc; text-shadow: 12px 7px 15px 12px black;
-animation: poof 1.5s forwards;
-animation-delay: 1.5s;
+animation: poof 1.0s forwards;
+animation-delay: 1.0s;
 }
-*/
 
 /*
 .boom{
@@ -195,13 +198,13 @@ const HomePageTemplate = ({
 
 
 
-<div className='container'>
+<div className='container' style={{padding:'2% 3%', borderRadius:'12px',}}>
 
-<h1 className='title'>{title}</h1>
+<h1 className='title' style={{textAlign:'center',}}>{title}</h1>
               
 <div className="content" style={{margin:'0 0 1rem 0', padding:'2% 0', borderRadius:'10px',}}>
 
-<h3 className="logotype" style={{textAlign:'center', fontSize:'180%',}}>
+<h3 className="" style={{textAlign:'center',}}>
 {heading}
 </h3>
 
@@ -209,15 +212,50 @@ const HomePageTemplate = ({
 
 {description}
 
+<ArticleTemplate />
+<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p> 
 </div>
 
 
-<div>
+<div className="sidebar" style={{padding:'1rem', minWidth:'35%', maxWidth:'35%',}}>
+    
+    <div style={{position:'sticky', top:'30px', }}>
 
-          
 
 
+
+
+
+
+<div className="container content" style={{margin:'0 0 1rem 0', padding:'2% 0', borderRadius:'10px',}}>
+<h3 className="logotype" style={{textAlign:'center', fontSize:'180%',}}>
+Network
+</h3>
 </div>
+
+
+
+
+    <a href="https://twilightscapes.com" target="_blank" rel="noopener noreferrer" style={{textDecoration:'none', color:'inherit',}}>
+    <Image className="" alt="Todd Lambert Night photos" filename="twilightscapes-button.jpg" />
+    <br />
+    Experience a new style of landscape photography all through the eyes of Todd Lambert. Explore the unusual and see the Western States like you&apos;ve never seen them before.
+    <h5 style={{textAlign:'center',}}>Visit Twilightscapes.com</h5></a>
+    
+    <br />
+    <br />
+ 
+    
+    
+    <a href="https://urbanfetish.com" target="_blank" rel="noopener noreferrer" style={{textDecoration:'none', color:'inherit',}}>
+    <Image className="" alt="Todd Lambert Night photos" filename="urban-fetish-button.jpg" />
+    <br />
+    Take a walk on the wild side and follow along as Todd Lambert goes in search of the creepiest, freakiest, spookiest abandoned and desolate locations he can find. See places that you wouldn&apos;t dare go into, especially at night.
+    
+    <h5 style={{textAlign:'center',}}>Visit UrbanFetish.com</h5></a>
+    
+    </div>
+    </div>
 
 
 </section>
