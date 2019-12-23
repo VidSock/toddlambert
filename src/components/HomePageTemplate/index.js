@@ -7,6 +7,7 @@ import PropTypes from 'prop-types'
 import Image from '../Image';
 import { graphql } from 'gatsby'
 import { HTMLContent } from '../Content'
+import Contact from '../Contact-inc'
 // import ArticleTemplate from '../ArticleTemplate'
 // import { Link } from 'gatsby'
 import styled from "styled-components"
@@ -261,7 +262,14 @@ Network
     </div>
 
 
+
+
 </section>
+
+<div className="outer">
+    <Contact className="container contactform" />
+</div>
+<br />
     
     </CustomBox>
   </>
