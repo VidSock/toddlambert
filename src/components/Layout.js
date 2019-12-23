@@ -1,4 +1,5 @@
-import React from 'react'
+import React, { Component } from 'react'
+
 import { Helmet } from 'react-helmet'
 import Footer from '../components/Footer'
 // import Gallery1 from '../components/Gallery1'
@@ -17,8 +18,8 @@ import Consent from '../components/Consent'
 
 
 // import ScrollAnimation from 'react-animate-on-scroll'
-import useSiteMetadata from './SiteMetadata'
-import { withPrefix } from "gatsby"
+// import useSiteMetadata from './SiteMetadata'
+// import { withPrefix } from "gatsby"
 
 if (typeof window !== "undefined") {
   // eslint-disable-next-line global-require
@@ -29,27 +30,28 @@ if (typeof window !== "undefined") {
 
 
 
-    
-    
-const TemplateWrapper = ({ children }) => {
-  
+
+class Layout extends Component {
+  constructor (props) {
+    super(props)
+    this.state = { isActive: false }
+
+  }
 
 
 
-  const { title, description } = useSiteMetadata()
-  return (
-    <><div id="topofpage" name="topofpage"> </div>
-      <Helmet>
-        <html lang="en" />
-        <title>{title}</title>
-        <meta name="description" content={description} />
-
+  render () {
+    return (
+<>
+        <Helmet>
+          <title>{config.siteTitle}</title>
+          <meta name='description' content={config.siteDescription} />
+ 
         
-
         <meta property="og:type" content="business.business" />
-        <meta property="og:title" content={title} />
+        <meta property="og:title" content={config.siteTitle} />
         <meta property="og:url" content="/" />
-        <meta property="og:image" content={`${withPrefix("/")}img/og-image.jpg`} />
+
         
         
         <link rel="apple-touch-icon" sizes="180x180" href="/siteimages/apple-splashapple-icon-180.png" />
@@ -127,12 +129,12 @@ const TemplateWrapper = ({ children }) => {
 
 
       </Helmet>
-      
- 
+
+
       <Navbar />
       <PopContact />
   
-      <main>{children}</main>
+      <main>{this.props.children}</main>
 
       <Consent />
     
@@ -140,12 +142,24 @@ const TemplateWrapper = ({ children }) => {
 
       <Install />
       <Footer />
-      </>
-    
-  )
+       
+</>
+
+       
+       
+       
+    )
+  }
 }
 
-export default TemplateWrapper
+
+export default Layout
+
+        
+
+        
+    
+
 
 
 

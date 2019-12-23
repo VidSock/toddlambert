@@ -86,20 +86,8 @@ module.exports = {
         htmlTitle: `Gatsby Starter Business Content Manager`,
       },
     },
-    {
-      resolve: `gatsby-plugin-nprogress`,
-      options: {
-        color: config.themeColor,
-        showSpinner: false,
-      },
-    },
-    {
-      resolve: `gatsby-plugin-google-tagmanager`,
-      options: {
-        id: config.googleTagManagerID,
-        includeInDevelopment: false,
-      },
-    },
+
+
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
