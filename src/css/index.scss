@@ -955,7 +955,7 @@ body.light #blogroll{background-color:transparent !important;}
   }
 
 .back-to-top{display: block; position:fixed; bottom:25vh; right:45%; }
-.back-to-top{top:70vh !important; right:3% !important;}
+.back-to-top{top:70vh !important; right:5% !important;}
 
 .intro:after, .intro:before{font-size:380%}
 	
@@ -1275,11 +1275,12 @@ text-shadow: 1px 1px 1px black;
 // Header
 
 .back-to-top svg, .back-to-top svg:visited{color:#fff;}
-body.light .back-to-top svg, body.light .back-to-top svg:visited {color:#666;}
+body.light .back-to-top svg, body.light .back-to-top svg:visited,  body.light .back-to-top:after {color:#666;}
 body.light .back-to-top svg:hover, .back-to-top svg:hover{color:$primary;}
 
-
-
+body.dark .back-to-top:after{color:#fff}
+body.dark #thread__container *{color:#fff !important;}
+body.light #thread__container *{color:#222 !important;}
 
 
 [aria-current] {

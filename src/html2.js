@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import favicon from './img/favicon.ico'
+import favicon from './assets/img/favicon.ico'
 
 export default class HTML extends Component {
   render () {
@@ -11,8 +11,7 @@ export default class HTML extends Component {
           {this.props.headComponents}
           <link rel='shortcut icon' href={favicon} />
         </head>
-
-
+        <body>
           <div
             id='___gatsby'
             dangerouslySetInnerHTML={{ __html: this.props.body }}
