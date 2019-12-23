@@ -1,9 +1,8 @@
-import React, { Component } from 'react'
+import React from 'react'
 import { Helmet } from 'react-helmet'
 import Footer from '../components/Footer'
 // import Gallery1 from '../components/Gallery1'
 import Navbar from '../components/Navbar'
-import config from '../../config'
 // import Install from '../components/Install'
 import PopContact from '../components/PopContact'
 import 'typeface-lobster-two'
@@ -41,8 +40,8 @@ const TemplateWrapper = ({ children }) => {
     <><div id="topofpage" name="topofpage"> </div>
       <Helmet>
         <html lang="en" />
-        <title>{config.siteTitle}</title>
-          <meta name='description' content={config.siteDescription} />
+        <title>{title}</title>
+        <meta name="description" content={description} />
 
         
 
