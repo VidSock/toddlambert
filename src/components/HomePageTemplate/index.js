@@ -198,11 +198,12 @@ const HomePageTemplate = ({
     <CustomBox>
 
 
-<section className="intro split" style={{display:'flex', padding:'1rem', position:'relative',}}>
+<section className="section intro split" style={{display:'flex', padding:'1rem', position:'relative',}}>
 
 
 
-<div className='container' style={{padding:'2% 3%', borderRadius:'12px',}}>
+
+<div className='container innerpanel' style={{padding:'2% 3%', borderRadius:'12px',}}>
 
 <h1 className='title' style={{textAlign:'center',}}>{title}</h1>
               

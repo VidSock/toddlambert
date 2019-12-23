@@ -33,16 +33,31 @@ const ArticlePage = ({ data }) => {
                 tags={post.frontmatter.tags}
                 title={post.frontmatter.title}
               />
+              
+              
+             <div className=" content" style={{margin:'0 12% 1rem 12%', padding:'2% 0', borderRadius:'10px',}}>
+<h3 className="" style={{textAlign:'center',}}>
+Please Share
+</h3>
+
               <Share
                 title={post.frontmatter.title}
                 slug={post.fields.slug}
                 excerpt={post.frontmatter.meta_description}
               />
-              <hr />
-              <Disqus
+              </div>
+              
+           <section className="section outer">
+   
+          <div className="container innerpanel" style={{margin: '',}}>
+            <div className="content" style={{padding: '2% 3%'}}>
+            
+            <Disqus
                 title={post.frontmatter.title}
                 slug={post.fields.slug}
               />
+              </div></div></section>
+              
             </div>
           </div>
         </div>

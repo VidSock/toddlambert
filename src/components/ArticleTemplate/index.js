@@ -2,6 +2,16 @@ import React from 'react'
 import Content from '../Content'
 import { kebabCase } from 'lodash'
 import { Link } from 'gatsby'
+import styled from 'styled-components'
+
+const CustomBox = styled.div`
+.taglist{display:flex; margin:.5rem 0;}
+.taglist li{display:flex; flex-wrap: nowrap;/*  padding:.2rem .5rem; border:1px dotted; border-radius:7px; */ margin:0 .5rem 1rem 0;}
+
+.taglist li:before{content:'{ '; }
+.taglist li:after{content:' }'; }
+
+`
 
 const ArticleTemplate = ({
   content,
@@ -14,13 +24,17 @@ const ArticleTemplate = ({
 }) => {
   const PostContent = contentComponent || Content
   return (
-    <div>
-      <h1 className='title is-size-2 has-text-weight-bold is-bold-light'>
+    <CustomBox>
+      
+      <img src={cover} alt={title} style={{borderRadius:'12px', marginTop:'1rem',}} />
+      
+      <div style={{padding:'2% 3%',}}>
+      <h1 className='title is-size-2 is-bold-light'>
         {title}
       </h1>
-      <img src={cover} alt={title} />
       <PostContent content={content} />
-      <div style={{ marginTop: `4rem` }}>
+      </div>
+      <div style={{ marginTop: '0', padding:'2% 3%', }}>
         <h4>Tags</h4>
         <ul className='taglist'>
           {(tags && tags.length)
@@ -32,8 +46,7 @@ const ArticleTemplate = ({
             : null}
         </ul>
       </div>
-      <hr />
-    </div>
+    </CustomBox>
   )
 }
 
