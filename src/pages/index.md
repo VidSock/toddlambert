@@ -1,8 +1,8 @@
 ---
 templateKey: home-page
-title: Class.Style.Standards
+title: Class.Style.Adventure
 heading: Premiere frontend product designer
-description: Specializing in frontend React and Gatsby design and development.
+description: Specializing in Wordpress themes and React/Gatsby design and development.
 offerings:
   blurbs:
     - image: /img/coffee.png
