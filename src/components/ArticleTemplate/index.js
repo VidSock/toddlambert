@@ -29,7 +29,7 @@ const ArticleTemplate = ({
       <img src={cover} alt={title} style={{borderRadius:'12px', marginTop:'1rem',}} />
       
       <div style={{padding:'2% 3%',}}>
-      <h1 className='title is-size-2 is-bold-light'>
+      <h1 className='title is-size-2 is-bold-light' style={{textDecoration:'none',}}>
         {title}
       </h1>
       <PostContent content={content} />

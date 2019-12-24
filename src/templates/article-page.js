@@ -35,7 +35,7 @@ const ArticlePage = ({ data }) => {
               />
               
               
-             <div className=" content" style={{margin:'0 12% 1rem 12%', padding:'2% 0', borderRadius:'10px',}}>
+             <div className=" content" style={{margin:'0 5% 1rem 5%', padding:'2% 0', borderRadius:'10px',}}>
 <h3 className="" style={{textAlign:'center',}}>
 Please Share
 </h3>

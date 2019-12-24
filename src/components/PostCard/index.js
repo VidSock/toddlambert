@@ -3,30 +3,30 @@ import { Link } from 'gatsby'
 
 const PostCard = ({ posts }) => {
   return (
-    <div className='container'>
+    <div className='container' style={{ borderRadius:'12px',}}>
       {posts
         .filter(post => post.node.frontmatter.templateKey === 'article-page')
         .map(({ node: post }) => (
           <div
             className='content'
-            style={{ border: '1px solid #eaecee', padding: '2em 4em' }}
+            style={{ border: '0px solid #eaecee',  borderRadius:'12px', }}
             key={post.id}
           >
-            <p>
-              <Link className='has-text-primary' to={post.fields.slug}>
-                {post.frontmatter.title}
-              </Link>
-              <span> &bull; </span>
-              <small>{post.frontmatter.date}</small>
-            </p>
+<Link className='has-text-primary' style={{textDecoration:'none',}} to={post.fields.slug}>
+<img src={post.frontmatter.cover} alt={post.frontmatter.title} style={{borderRadius:'12px', marginTop:'1rem',}} />
+</Link>
+
+<div style={{ padding:'4%',}}><h2>{post.frontmatter.title}</h2>
+
             <p>
               {post.excerpt}
               <br />
               <br />
-              <Link className='button is-small' to={post.fields.slug}>
+              <Link className='button is-small' to={post.fields.slug} style={{textAlign:'right', display:'block',}}>
                                 Keep Reading →
               </Link>
             </p>
+            </div>
           </div>
         ))}
     </div>

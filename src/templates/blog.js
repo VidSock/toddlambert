@@ -1,9 +1,58 @@
 import React, { Component } from 'react'
 import { Link } from 'gatsby'
+import Image from '../components/Image';
 import config from '../../config'
 import Helmet from 'react-helmet'
 import PostCard from '../components/PostCard'
 import Layout from '../components/Layout'
+
+import styled from "styled-components"
+
+const CustomBox = styled.div`
+*, *:before, *:after { box-sizing: border-box; }
+
+.intro img{border-radius:6px !important;}
+
+
+
+
+
+
+.image-wrap {
+  width: 100%;
+  height: 100vh;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+}
+
+.image-wrap img {
+  width: 100vw;
+  z-index:0;
+}
+
+
+@media (min-width: 58rem) {
+.content {padding:0 !important; border:1px solid red !important;}
+}
+
+
+@media (max-width: 48rem) {
+
+
+  .intro:before{font-size:150% !important}
+  .content{flex-direction:column !important;}
+  .content .stack{width:100% !important; margin:0 !important; background:tranparent !important;}
+  .pitch{font-size:250% !important; text-align:center;}
+  .split {display:block !important; width:100% !important; }
+  .split div{max-width:100% !important; with:100% !important; background:tranparent !important;}
+  .sidebar{margin:2rem 0;}
+  .sidebar{max-width:100% !important; width:100% !important; background:tranparent !important;}
+  .sidebar .logolink{text-align:center !important;}
+}
+
+
+`
 
 const PaginationLink = props => {
   if (!props.test) {
@@ -45,30 +94,75 @@ export default class BlogPage extends Component {
             {JSON.stringify(websiteSchemaOrgJSONLD)}
           </script>
         </Helmet>
-        <section className='hero is-primary is-bold'>
-          <div className='hero-body'>
-            <div className='container'>
-              <div className='columns'>
-                <div className='column is-10 is-offset-1'>
-                  <div className='section'>
-                    <h1 className='title'>
-                      Blog
-                    </h1>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section className='section'>
+        
+
+{/* <div className='' style={{padding:'0 6% 0 6%', borderRadius:'12px', textAlign:'center',}}>
+
+<h1 className='logotype'>Blog</h1>
+
+</div> */}
+
+
+<section className="section intro split" style={{display:'flex', padding:'1rem', position:'relative',}}>
+        
+        
+
+<div className='content stack' style={{padding:'', borderRadius:'12px',}}>
           <PostCard posts={group} />
-          <section className='section'>
-            <div className='buttons is-centered'>
-              <PaginationLink test={first} url={previousUrl} text='Previous Page' />
-              <PaginationLink test={last} url={nextUrl} text='Next Page' />
-            </div>
-          </section>
-        </section>
+          
+<div className='buttons is-centered'>
+<PaginationLink test={first} url={previousUrl} text='Previous Page' />
+<PaginationLink test={last} url={nextUrl} text='Next Page' />
+</div>
+
+</div>
+
+
+
+
+<div className="sidebar" style={{padding:'1rem', minWidth:'35%', maxWidth:'35%',}}>
+    
+    <div style={{position:'sticky', top:'30px', }}>
+
+
+<div className="content stack" style={{margin:'0 0 1rem 0', padding:'2% 0', borderRadius:'10px',}}>
+<h3 className="logotype" style={{textAlign:'center', fontSize:'180%',}}>
+Network
+</h3>
+</div>
+
+
+
+
+    <a href="https://twilightscapes.com" target="_blank" rel="noopener noreferrer" style={{textDecoration:'none', color:'inherit',}}>
+    <Image className="" alt="Todd Lambert Night photos" filename="twilightscapes-button.jpg" />
+    <br />
+    Experience a new style of landscape photography all through the eyes of Todd Lambert. Explore the unusual and see the Western States like you&apos;ve never seen them before.
+    <h5 style={{textAlign:'center',}}>Visit Twilightscapes.com</h5></a>
+    
+    <br />
+    <br />
+ 
+    
+    
+    <a href="https://urbanfetish.com" target="_blank" rel="noopener noreferrer" style={{textDecoration:'none', color:'inherit',}}>
+    <Image className="" alt="Todd Lambert Night photos" filename="urban-fetish-button.jpg" />
+    <br />
+    Take a walk on the wild side and follow along as Todd Lambert goes in search of the creepiest, freakiest, spookiest abandoned and desolate locations he can find. See places that you wouldn&apos;t dare go into, especially at night.
+    
+    <h5 style={{textAlign:'center',}}>Visit UrbanFetish.com</h5></a>
+    
+    </div>
+    </div>
+
+
+</section>
+
+
+            
+
+          
+ 
       </Layout>
     )
   }

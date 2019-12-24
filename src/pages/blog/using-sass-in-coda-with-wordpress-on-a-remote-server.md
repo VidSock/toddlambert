@@ -15,7 +15,6 @@ tags:
 meta_title: Using SASS in Coda with WordPress on a remote server
 meta_description: I’ve been searching for a very long time for a solution to use SASS with Coda.
 ---
-# Using SASS in Coda with WordPress on a remote server
 
 I’ve been searching for a very long time for a solution to use SASS with Coda.
 

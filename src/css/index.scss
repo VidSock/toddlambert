@@ -678,7 +678,24 @@ body.dark .logotype{}
 body.dark .logotype:before, body.dark .logotype:after{color:#fff; text-shadow: 0px 1px 0px $primary;}
 
 
+.socialtext{position: relative; margin:10px 20px 0 0; font-size:100%; line-height: 100%;}
 
+.socialtext:before{content: '{';
+	font-size: 300%;
+	color: #fff;
+	letter-spacing:1px;
+	position:absolute;
+	left:-25%;
+	top:5px;
+	}
+.socialtext:after{content: '}';
+	font-size: 300%;
+	color: #fff;
+	letter-spacing:1px;
+	position:absolute;
+	right:-25%;
+	top:5px;
+	}
 
 
 
