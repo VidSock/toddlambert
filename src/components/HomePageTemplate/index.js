@@ -23,7 +23,7 @@ const CustomBox = styled.div`
 
 
 .intro:before{
-	content: "Todd Lives A Dual-Life";
+	content: "Todd Leads A Dual-Life";
 
 position:absolute;
 display: flex;
@@ -216,7 +216,7 @@ const HomePageTemplate = ({
   
   <ScrollAnimation animateIn="fadeIn" delay={1400} offset={0} style={{ paddingTop:'40px', overflow:'hidden',}}>
         <div className="typewriter"><h1
-          className="booma typewriter normal txtshadow-header hit-the-floor"
+          className="booma normal txtshadow-header hit-the-floor"
           style={{
             color: '#fff',
             fontSize: '4rem',
@@ -248,7 +248,7 @@ const HomePageTemplate = ({
             top:'60px',
           }}
         >
-          by day
+          by Day
         </h2>
         </ScrollAnimation>
         
@@ -283,7 +283,7 @@ const HomePageTemplate = ({
             marginBottom:'20px',
           }}
         >
-         By Night
+         by Night
         </h3>
         </ScrollAnimation>
 
