@@ -1,7 +1,7 @@
 ---
 templateKey: home-page
 title: Class.Style.Adventure
-heading: Premiere frontend product designer
+heading: Premiere Front-end Product Designer
 description: Specializing in Wordpress themes and React/Gatsby design and development.
 offerings:
   blurbs:
