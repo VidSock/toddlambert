@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { Link } from 'gatsby'
-import Image from '../components/Image';
+import Image from '../components/Image'
 import config from '../../config'
 import Helmet from 'react-helmet'
 import PostCard from '../components/PostCard'
