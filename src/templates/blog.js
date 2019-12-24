@@ -33,7 +33,7 @@ const CustomBox = styled.div`
 
 
 @media (min-width: 58rem) {
-.content {padding:0 !important; border:1px solid red !important;}
+.content {padding:0 !important;}
 }
 
 
@@ -46,7 +46,7 @@ const CustomBox = styled.div`
   .pitch{font-size:250% !important; text-align:center;}
   .split {display:block !important; width:100% !important; }
   .split div{max-width:100% !important; with:100% !important; background:tranparent !important;}
-  .sidebar{margin:2rem 0;}
+  .sidebar{margin:2% 0;}
   .sidebar{max-width:100% !important; width:100% !important; background:tranparent !important;}
   .sidebar .logolink{text-align:center !important;}
 }
@@ -103,11 +103,12 @@ export default class BlogPage extends Component {
 </div> */}
 
 
-<section className="section intro split" style={{display:'flex', padding:'1rem', position:'relative',}}>
+<section className="section intro split" style={{display:'flex', padding:'0 2%', position:'relative',}}>
         
         
 
-<div className='content stack' style={{padding:'', borderRadius:'12px',}}>
+<div className="content" style={{margin:'0 0 1% 0', padding:'0 0', borderRadius:'12px',}}>
+
           <PostCard posts={group} />
           
 <div className='buttons is-centered'>
@@ -120,12 +121,12 @@ export default class BlogPage extends Component {
 
 
 
-<div className="sidebar" style={{padding:'1rem', minWidth:'35%', maxWidth:'35%',}}>
+<div className="sidebar" style={{padding:'2% 0 0 2%', minWidth:'35%', maxWidth:'35%',}}>
     
     <div style={{position:'sticky', top:'30px', }}>
 
 
-<div className="content stack" style={{margin:'0 0 1rem 0', padding:'2% 0', borderRadius:'10px',}}>
+<div className="container content" style={{margin:'0 0 1rem 0', padding:'2% 0', borderRadius:'10px',}}>
 <h3 className="logotype" style={{textAlign:'center', fontSize:'180%',}}>
 Network
 </h3>

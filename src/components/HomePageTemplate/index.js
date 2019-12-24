@@ -198,7 +198,7 @@ const HomePageTemplate = ({
     <CustomBox>
 
 
-<section className="section intro split" style={{display:'flex', padding:'1rem', position:'relative',}}>
+<section className="section intro split" style={{display:'flex', padding:'2%', position:'relative',}}>
 
 
 
@@ -207,7 +207,7 @@ const HomePageTemplate = ({
 
 <h1 className='title' style={{textAlign:'center',}}>{title}</h1>
               
-<div className="content" style={{margin:'0 0 1rem 0', padding:'2% 0', borderRadius:'10px',}}>
+<div className="content" style={{margin:'0 1% 0 0', padding:'2% 0', borderRadius:'12px',}}>
 
 <h3 className="" style={{textAlign:'center',}}>
 {heading}
@@ -222,7 +222,7 @@ const HomePageTemplate = ({
 </div>
 
 
-<div className="sidebar" style={{padding:'1rem', minWidth:'35%', maxWidth:'35%',}}>
+<div className="sidebar" style={{padding:'1%', minWidth:'35%', maxWidth:'35%', marginLeft:'2%',}}>
     
     <div style={{position:'sticky', top:'30px', }}>
 
