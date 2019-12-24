@@ -8,6 +8,8 @@ import Image from '../Image'
 import { graphql } from 'gatsby'
 import { HTMLContent } from '../Content'
 import Contact from '../Contact-inc'
+import ScrollAnimation from 'react-animate-on-scroll'
+import PopNewsletter from '../PopNewsletter'
 // import ArticleTemplate from '../ArticleTemplate'
 // import { Link } from 'gatsby'
 import styled from "styled-components"
@@ -17,20 +19,21 @@ const CustomBox = styled.div`
 
 .intro img{border-radius:6px !important;}
 
-/*
+
+
+
 .intro:before{
-	content: "Front-end Design & Development";
+	content: "Todd Lives A Dual-Life";
 
 position:absolute;
 display: flex;
 align-items: center;
 justify-content: center;
 font-size:280%; color:#f8f8fc; text-shadow: 12px 7px 15px 12px black;
-animation: poof 1.0s forwards;
-animation-delay: 1.0s;
+animation: poof 1.5s forwards;
+animation-delay: 1.5s;
 top:0 !important;
 }
-*/
 
 /*
 .boom{
@@ -193,9 +196,91 @@ const HomePageTemplate = ({
     <Helmet>
       <title>{meta_title}</title>
       <meta name='description' content={meta_description} />
+      <html className="fullhead" />
     </Helmet>
     
     <CustomBox>
+
+
+<div className="outer intro">
+  
+<div className="image-wrap" style={{position:'relative', overflow:'hidden',}}>
+  
+ 
+  
+  
+  <div className="" style={{position:'absolute', top:'20px', width:'100vw', overflow:'hidden', border:'0px solid red', zIndex:'1',}}>
+  
+  
+  
+  
+  <ScrollAnimation animateIn="bounceInDown" delay={1400} offset={0} style={{position:'relative', paddingTop:'40px', right:'10%',}}>
+        <h1
+          className="boom normal txtshadow-header hit-the-floor"
+          style={{
+            color: '#fff',
+            fontSize: '4rem',
+           position: 'relative',
+//            top: '100px',
+//            right: '1%',
+//            backgroundColor: '#ff0000',
+            textAlign: 'right', 
+            float: 'none',
+          }}
+        >
+         Code Junkie
+        </h1>
+        </ScrollAnimation>
+        
+        
+  <ScrollAnimation animateIn="bounceInRight" delay={1500} style={{position:'relative', top:'0', right:'10%',}}>
+        <h2
+          className="boom narrow txtshadow mobile-txt"
+          style={{
+           fontSize:'2rem',
+           color: 'white',
+           position: 'relative',
+            textAlign: 'right', 
+          }}
+        >
+          by day, Photographer by
+        </h2>
+        </ScrollAnimation>
+        
+        
+  <ScrollAnimation animateIn="bounceInUp" delay={1450} style={{position:'relative', top:'0', right:'10%',}}>
+        <h3
+          className="boom"
+          style={{
+           fontSize:'6rem',
+           color: 'white',
+           position: 'relative',
+//            top: '230px',
+            textAlign: 'right',
+            textTransform: 'uppercase', 
+          }}
+        >
+          Night
+        </h3>
+        </ScrollAnimation>
+
+
+        <ScrollAnimation animateIn="bounceInRight" delay={2000} style={{ position:'relative', top:'-20px', right:'12%', float:'right', display:'none', justifyContent:'', alignItems:'center', margin:'0 auto', padding:'30px 0 0 0',  textAlign:'center',}}>
+   <PopNewsletter />      
+</ScrollAnimation>
+
+        
+        </div>
+        
+
+<div className=" kenburns-bottom-left" style={{position:'absolute', top:'0', width:'100vw', overflow:'hidden', border:'0px solid red', zIndex:'0',}}>
+        <Image className="" alt="Todd Lambert Web development for photographers" filename="todd-camping.jpg" style={{backgroundSize:'cover', zIndex:'0',}} />
+        </div>
+
+</div>
+
+
+</div>
 
 
 <section className="section intro split" style={{display:'flex', padding:'2%', position:'relative',}}>

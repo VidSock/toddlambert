@@ -1,8 +1,9 @@
-import React from 'react'
+import React, { Component } from 'react'
 import { Helmet } from 'react-helmet'
 import Footer from '../components/Footer'
 // import Gallery1 from '../components/Gallery1'
 import Navbar from '../components/Navbar'
+import config from '../../config'
 // import Install from '../components/Install'
 import PopContact from '../components/PopContact'
 import 'typeface-lobster-two'
@@ -39,9 +40,9 @@ const TemplateWrapper = ({ children }) => {
   return (
     <><div id="topofpage" name="topofpage"> </div>
       <Helmet>
-        <html lang="en" />
-        <title>{title}</title>
-        <meta name="description" content={description} />
+        <html lang="en" id="herohead" />
+        <title>{config.siteTitle}</title>
+          <meta name='description' content={config.siteDescription} />
 
         
 
@@ -118,6 +119,10 @@ const TemplateWrapper = ({ children }) => {
 <link rel="apple-touch-startup-image"
     href="/siteimages/apple-splash-1136-640.png"
     media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)" />
+
+
+
+
 
 
 
