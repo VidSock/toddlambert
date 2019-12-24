@@ -6,6 +6,7 @@ import { graphql, useStaticQuery } from 'gatsby'
 import Gallery from '../components/Gallery'
 import Image from '../components/Image'
 // import { Link } from 'gatsby'
+import Contact from '../components/Contact-inc'
 import ScrollAnimation from 'react-animate-on-scroll'
 // import GalleryMenu from '../components/GalleryMenu'
 // import { FiZoomIn } from 'react-icons/fi'
@@ -330,6 +331,15 @@ Client List
  
 </section>
 
+
+<br />
+<br />
+    
+<ScrollAnimation className="noprint" animateIn="bounceInUp" animateOut="fadeOut" initiallyVisible={false} animateOnce={true} animatePreScroll={false}>
+<div className="content outer">
+    <Contact />
+    </div>
+</ScrollAnimation>
 
       
     </Layout>

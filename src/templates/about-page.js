@@ -5,6 +5,8 @@ import { graphql } from 'gatsby'
 import { HTMLContent } from '../components/Content'
 import AboutPageTemplate from '../components/AboutPageTemplate'
 import Layout from '../components/Layout'
+import Contact from '../components/Contact-inc'
+import ScrollAnimation from 'react-animate-on-scroll'
 
 const AboutPage = ({ data }) => {
   const { markdownRemark: post } = data
@@ -20,6 +22,14 @@ const AboutPage = ({ data }) => {
         title={post.frontmatter.title}
         content={post.html}
       />
+      <br />
+<br />
+    
+<ScrollAnimation className="noprint" animateIn="bounceInUp" animateOut="fadeOut" initiallyVisible={false} animateOnce={true} animatePreScroll={false}>
+<div className="content outer">
+    <Contact />
+    </div>
+</ScrollAnimation>
     </Layout>
   )
 }
