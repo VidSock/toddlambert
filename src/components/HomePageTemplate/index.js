@@ -214,22 +214,22 @@ const HomePageTemplate = ({
   
   
   
-  <ScrollAnimation animateIn="bounceInDown" delay={1400} offset={0} style={{position:'relative', paddingTop:'40px', right:'10%',}}>
-        <h1
-          className="boom normal txtshadow-header hit-the-floor"
+  <ScrollAnimation animateIn="fadeIn" delay={1400} offset={0} style={{ paddingTop:'40px', overflow:'hidden',}}>
+        <div className="typewriter"><h1
+          className="booma typewriter normal txtshadow-header hit-the-floor"
           style={{
             color: '#fff',
             fontSize: '4rem',
            position: 'relative',
 //            top: '100px',
-//            right: '1%',
+           right: '6%',
 //            backgroundColor: '#ff0000',
             textAlign: 'right', 
             float: 'none',
           }}
         >
-         Code Junkie
-        </h1>
+         Code Monkey
+        </h1></div>
         </ScrollAnimation>
         
         
@@ -239,28 +239,51 @@ const HomePageTemplate = ({
           style={{
            fontSize:'2rem',
            color: 'white',
+           fontStyle:'normal',
+           position: 'relative',
+            textAlign: 'right', 
+            transform: 'rotate(-7deg)',
+            transformOrigin: 'center',
+            right:'15%',
+            top:'60px',
+          }}
+        >
+          by day
+        </h2>
+        </ScrollAnimation>
+        
+          <ScrollAnimation animateIn="bounceInRight" delay={1500} style={{position:'relative', top:'0', right:'10%',}}>
+        <h2
+          className="boom1 narrow txtshadow mobile-txt"
+          style={{
+           fontSize:'4.8rem',
+           color: 'white',
            position: 'relative',
             textAlign: 'right', 
           }}
         >
-          by day, Photographer by
+          Photographer
         </h2>
         </ScrollAnimation>
         
         
   <ScrollAnimation animateIn="bounceInUp" delay={1450} style={{position:'relative', top:'0', right:'10%',}}>
         <h3
-          className="boom"
+          className="boom2"
           style={{
-           fontSize:'6rem',
+           fontSize:'4rem',
            color: 'white',
            position: 'relative',
 //            top: '230px',
             textAlign: 'right',
-            textTransform: 'uppercase', 
+            textTransform: 'normal', 
+            right:'9%',
+            top:'10px',
+            height:'120%',
+            marginBottom:'20px',
           }}
         >
-          Night
+         By Night
         </h3>
         </ScrollAnimation>
 
