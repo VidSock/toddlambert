@@ -4,7 +4,7 @@ import Helmet from 'react-helmet'
 import Offerings from '../Offerings'
 import Testimonials from '../Testimonials'
 import PropTypes from 'prop-types'
-import Image from '../Image';
+import Image from '../Image'
 import { graphql } from 'gatsby'
 import { HTMLContent } from '../Content'
 import Contact from '../Contact-inc'
