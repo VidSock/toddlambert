@@ -8,6 +8,8 @@ meta_description: >-
   next several years visiting and living in numerous states including Colorado,
   Texas and Oregon.
 ---
+![](/img/todd-camping.jpg)
+
 ## A few points about this site and who's behind it.
 
 Todd Lambert, a “webdude” that grew up in Southern California and migrated to the Deep South. He then left to explore the western states where he spent the next several years visiting and living in numerous states including Colorado, Texas and Oregon.
