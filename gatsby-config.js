@@ -31,6 +31,19 @@ module.exports = {
       },
     },
     
+{ 
+      resolve: `gatsby-plugin-purgecss`,
+      options: {
+        printRejected: true, // Print removed selectors and processed file names
+        develop: true, // Enable while using `gatsby develop`
+        // tailwind: true, // Enable tailwindcss support
+        // whitelist: ['headroom', 'headroom--unfixed'], // Don't remove this selector
+         //ignore: ['index.css'], // Ignore files/folders
+         purgeOnly : ['/animate.css', '/custom.css', '/noscript.css'], // Purge only these files/folders
+      }
+    },
+  
+    
     {
       // keep as first gatsby-source-filesystem plugin for gatsby image support
       resolve: 'gatsby-source-filesystem',
