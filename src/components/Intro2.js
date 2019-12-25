@@ -26,7 +26,8 @@ const Intro2 = () => (
   
 <div className="image-wrap" style={{position:'relative', overflow:'hidden', paddingTop:'60px', borderBottom:'0px solid #222', borderRight:'0rem solid #dd4400', borderLeft:'0rem solid #dd4400', }}>
   
- <div className="" style={{position:'absolute', top:'60px', left:'0', width:'97vw', height:'100vh', overflow:'hidden', padding:'20px 0 0 0', border:'0px solid red', zIndex:'1',}}>
+
+ <div className="" style={{position:'absolute', top:'60px', left:'0', width:'100vw', height:'100vh', overflow:'hidden', padding:'20px 0 0 0', border:'0px solid red', zIndex:'1',}}>
   
   
 
@@ -41,7 +42,6 @@ const Intro2 = () => (
           style={{
             color: '#fff',
             textAlign: 'center', 
-//             width:'600px',
           }}
         >
          Code Monkey
@@ -132,6 +132,10 @@ const Intro2 = () => (
 </div>
 </ScrollAnimation>
         </div>
+        
+        
+        
+    
 
 </div>
 </div>
