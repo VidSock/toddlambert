@@ -40,17 +40,7 @@ module.exports = {
       },
     },
     
-    {
-    resolve: "gatsby-plugin-netlify-cache",
-    options: {
-      extraDirsToCache: [
-        "img/favorites",
-        "img/gallery1",
-        "img/gallery6",
-        "extra/splashscreens"
-      ]
-    }
-  },
+
     
 { 
       resolve: `gatsby-plugin-purgecss`,
