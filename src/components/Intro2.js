@@ -135,18 +135,14 @@ const Intro2 = () => (
   
   
   
-  <ScrollAnimation animateIn="fadeIn" delay={1400} offset={0} style={{ paddingTop:'0', overflow:'hidden',}}>
+  <ScrollAnimation animateIn="fadeIn" delay={1400} offset={0} style={{position:'relative', top:'0', left:'0', paddingTop:'0', overflow:'hidden', width:'100%',}}>
         <div className="typewriter"><h1
-          className="booma normal txtshadow-header hit-the-floor"
+          className="boom normal txtshadow-header"
           style={{
             color: '#fff',
             fontSize: '4rem',
-           position: 'relative',
-//            top: '100px',
-           right: '8%',
-//            backgroundColor: '#ff0000',
-            textAlign: 'right', 
-            float: 'none',
+            textAlign: 'center', 
+            width:'600px',
           }}
         >
          Code Monkey
@@ -157,35 +153,37 @@ const Intro2 = () => (
         
         
         
-  <ScrollAnimation animateIn="bounceInRight" delay={1500} style={{position:'relative', top:'0', right:'10%',}}>
+  <ScrollAnimation animateIn="bounceInRight" delay={1550} style={{position:'relative', top:'0', right:'0', display:'flex', justifyContent:'center', alignContent:'center',}}>
         <h2
-          className="boom narrow txtshadow mobile-txt"
+          className="boom narrow txtshadow-header mobile-txt"
           style={{
            fontSize:'2rem',
            color: 'white',
            fontStyle:'normal',
-           position: 'relative',
-            textAlign: 'right', 
+            textAlign: 'center', 
             transform: 'rotate(-7deg)',
             transformOrigin: 'center',
-            right:'15%',
-            top:'60px',
+            background:'#666',
+            borderRadius:'12px',
+            padding:'3px 10px',
+            margin:'0 auto',
+//             width:'100px !important',
+            display:'inline-block',
           }}
         >
           by Day
         </h2>
         </ScrollAnimation>
         
-          <ScrollAnimation animateIn="bounceInRight" delay={1500} style={{position:'relative', top:'0', right:'10%',}}>
+          <ScrollAnimation animateIn="bounceInRight" delay={4600} style={{position:'relative', top:'20px', right:'0',}}>
         <h2
-          className="boom1 narrow txtshadow mobile-txt"
+          className="boom narrow txtshadow-header mobile-txt"
           style={{
            fontSize:'4.8rem',
            color: 'white',
-           position: 'relative',
-            textAlign: 'right', 
-              letterSpacing: '.0rem',
-              right:'',
+            textAlign: 'center', 
+            letterSpacing: '.0rem',
+
           }}
         >
           Photographer
@@ -193,20 +191,17 @@ const Intro2 = () => (
         </ScrollAnimation>
         
         
-  <ScrollAnimation animateIn="bounceInUp" delay={1450} style={{position:'relative', top:'0', right:'10%',}}>
+  <ScrollAnimation animateIn="bounceInUp" delay={4650} style={{position:'', top:'0', right:'0',}}>
         <h3
-          className="boom2"
+          className="boom txtshadow-header mobile-txt"
           style={{
-           fontSize:'4rem',
+           fontSize:'3rem',
            color: 'white',
-           position: 'relative',
-//            top: '230px',
-            textAlign: 'right',
+            textAlign: 'center',
             textTransform: 'normal', 
-            right:'9%',
-            top:'10px',
-            height:'120%',
-            marginBottom:'20px',
+ 
+//             height:'120%',
+//             marginBottom:'20px',
           }}
         >
          by Night
@@ -225,8 +220,26 @@ const Intro2 = () => (
         
         
 
-<div className=" kenburns-bottom-left" style={{position:'absolute', top:'0', width:'100vw', overflow:'hidden', border:'0px solid red', zIndex:'-1',}}>
-        <Image className="" alt="Todd Lambert Web development for photographers" filename="todd-camping.jpg" style={{backgroundSize:'cover', zIndex:'0',}} />
+<div className="" style={{position:'absolute', top:'0', width:'100vw', overflow:'hidden', border:'0px solid red', zIndex:'-1',}}>
+<ScrollAnimation animateIn="fadeIn">
+<div id="slideshow">
+  <div className="slide-wrapper"  style={{position:'relative', zIndex:'0',}}>
+  
+   
+   
+    <div className="slide" style={{zIndex:'',}}><Image className="slider" alt="Todd Stars" filename="todd-in-action2.jpg" style={{backgroundSize:'cover', zIndex:'', }} /></div>
+    
+    <div className="slide" style={{zIndex:'',}}><Image className="slider" alt="Todd Camp" filename="todd-in-action4.jpg" style={{backgroundSize:'cover', zIndex:'', }} /></div>
+    
+    <div className="slide" style={{zIndex:'',}}><Image className="slider" alt="Todd Mushroom" filename="todd-in-action7.jpg" style={{backgroundSize:'cover', zIndex:'', }} /></div>
+    
+
+    
+
+   
+  </div>
+</div>
+</ScrollAnimation>
         </div>
 
 </div>

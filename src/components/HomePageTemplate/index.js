@@ -13,10 +13,8 @@ import ScrollAnimation from 'react-animate-on-scroll'
 // import ArticleTemplate from '../ArticleTemplate'
 // import { Link } from 'gatsby'
 import styled from 'styled-components'
-/*
 import Intro1 from '../Intro1'
 import Intro2 from '../Intro2'
-*/
 import Intro3 from '../Intro3'
 
 const CustomBox = styled.div`
@@ -113,7 +111,7 @@ const HomePageTemplate = ({
 {/* <Intro1 /> */}
 {/* <Intro2 /> */}
 {/* <Intro3 /> */}
-<Intro3 />
+<Intro2 />
 <section className="section split" style={{display:'flex', padding:'2%', position:'relative',}}>
 
 
