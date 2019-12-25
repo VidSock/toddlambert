@@ -466,34 +466,106 @@ footer{background-color: #222; padding:.1rem 0rem;  animation: fadeIn 3s; border
 //  ANIMATIONS
 
 
-.line-1{
-    position: relative;
-    top: 50%;  
-    width: 24em;
-    margin: 0 auto;
-    border-right: 2px solid rgba(255,255,255,.75);
-    font-size: 180%;
-    text-align: center;
-    white-space: nowrap;
-    overflow: hidden;
-    transform: translateY(-50%);    
+#slideshow {
+//   overflow: hidden;
+  height: 100vh;
+  width: 100vw;
+  margin: 0 auto;
 }
 
-/* Animation */
-.anim-typewriter{
-  animation: typewriter 4s steps(44) 1s 1 normal both,
-             blinkTextCursor 500ms steps(44) infinite normal;
-}
-@keyframes typewriter{
-  from{width: 0;}
-  to{width: 24em;}
-}
-@keyframes blinkTextCursor{
-  from{border-right-color: rgba(255,255,255,.75);}
-  to{border-right-color: transparent;}
+.slide-wrapper {
+/*
+  width: 19800px;
+  -webkit-animation: slide 18s ease infinite;
+*/
 }
 
+.slide {
 
+  height: 100vh;
+  width: 100vw;
+}
+
+.slide:nth-child(1) {
+  background: #D93B65;
+}
+
+.slide:nth-child(2) {
+  background: #037E8C;
+}
+
+.slide:nth-child(3) {
+  background: #36BF66;
+}
+
+.slide:nth-child(4) {
+  background: #D9D055;
+}
+
+.slide-number {
+  color: #000;
+  text-align: center;
+  font-size: 10em;
+}
+
+.slide{background:transparent !important;}
+
+/*
+@-webkit-keyframes slide {
+  20% {margin-left: 0px;}
+  30% {margin-left: -728px;}
+  50% {margin-left: -728px;}
+  60% {margin-left: -1456px;}
+  70% {margin-left: -1456px;}
+  80% {margin-left: -2184px;}
+  90% {margin-left: -2184px;}
+}
+*/
+
+
+
+
+.slide {
+    position:absolute;
+}
+
+.slide:nth-child(1) {
+    -webkit-animation: fade 24s 0s infinite;
+    z-index:40;
+}
+
+.slide:nth-child(2) {
+    -webkit-animation: fade 24s 6s infinite;
+    z-index:30;
+}
+
+.slide:nth-child(3) {
+    -webkit-animation: fade 24s 12s infinite;
+    z-index:20;
+}
+
+.slide:nth-child(4) {
+    -webkit-animation: fade 24s 18s infinite; 
+    z-index:10;
+}
+
+@-webkit-keyframes fade {
+    0%{
+      opacity: 1;
+   }
+   15% {
+      opacity:1;
+   }
+   25%{
+      opacity: 0;
+   }
+   90% {
+      opacity:0;
+   }
+   100% {
+      opacity:1;
+   }
+}
 
 
 
@@ -502,9 +574,9 @@ footer{background-color: #222; padding:.1rem 0rem;  animation: fadeIn 3s; border
   border-right: .15em solid $primary; /* The typwriter cursor */
   white-space: nowrap; /* Keeps the content on a single line */
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-  letter-spacing: .15em; /* Adjust as needed */
+  letter-spacing: .05rem; /* Adjust as needed */
   animation: 
-    typing 3.5s steps(40, end),
+    typing 3.5s steps(50, end),
     blink-caret .75s step-end infinite;
     animation-delay: 1.4s;
 }
