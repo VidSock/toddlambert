@@ -1,6 +1,6 @@
 module.exports = {
   siteTitle: 'Todd Lambert | Front-end Web Developer and Night Photographer', // Site title.
-  siteTitleAlt: 'Business', // Alternative site title for SEO.
+  siteTitleAlt: 'Todd Lambert', // Alternative site title for SEO.
   siteLogo: '/icons/icon-512x512.png', // Logo used for SEO and manifest.
   siteUrl: 'https://toddtest.netlify.com', // Domain of your website without pathPrefix.
   pathPrefix: '', // Prefixes all links. For cases when deployed to example.github.io/gatsby-starter-business/.

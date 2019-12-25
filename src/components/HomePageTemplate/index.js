@@ -13,11 +13,9 @@ import ScrollAnimation from 'react-animate-on-scroll'
 // import ArticleTemplate from '../ArticleTemplate'
 // import { Link } from 'gatsby'
 import styled from 'styled-components'
-/*
-import Intro1 from '../Intro1'
+// import Intro1 from '../Intro1'
 import Intro2 from '../Intro2'
-*/
-import Intro3 from '../Intro3'
+// import Intro3 from '../Intro3'
 
 const CustomBox = styled.div`
 *, *:before, *:after { box-sizing: border-box; }
@@ -49,28 +47,20 @@ top:0 !important;
 
 
 
-@media (min-width: 58rem) {
 
-  .image-wrap h1.boom{font-size:450% !important;}
-  .image-wrap h2.boom{font-size:280% !important;}
-  .image-wrap h3.boom{font-size:550% !important;}
-  
-/*
-  #hero h1{font-size:650% !important; line-height:95%; margin-bottom:1rem;}
-  #hero h3{font-size:880% !important;}
-*/
-  
-//   #hero .news-content h3{font-size:inherit !important;}
-//   .special{font-size:200% !important;}
+@media (min-width: 48em) {
+
+  .boom1{font-size:380% !important;}
+  .boom2{font-size:250% !important;}
+  .boom3{font-size:380% !important;}
+  .boom4{font-size:280% !important;}
+
 }
 
-
-@media (max-width: 48rem) {
+@media (max-width: 48em) {
 
   .image-wrap {height:auto !important; min-height:300px !important;}
-  .image-wrap h1.boom{font-size:250% !important;}
-  .image-wrap h2.boom{font-size:180% !important;}
-  .image-wrap h3.boom{font-size:280% !important;}
+  
   .intro:before{font-size:150% !important}
   .content{flex-direction:column !important;}
   .content .stack{width:100% !important; margin:0 !important; background:tranparent !important;}
@@ -80,6 +70,8 @@ top:0 !important;
   .sidebar{margin:2rem 0;}
   .sidebar .logolink{text-align:center !important;}
 }
+
+
 
 
 `
@@ -113,7 +105,7 @@ const HomePageTemplate = ({
 {/* <Intro1 /> */}
 {/* <Intro2 /> */}
 {/* <Intro3 /> */}
-<Intro3 />
+<Intro2 />
 <section className="section split" style={{display:'flex', padding:'2%', position:'relative',}}>
 
 

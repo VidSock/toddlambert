@@ -2,14 +2,7 @@ const config = require('./config')
 
 const pathPrefix = config.pathPrefix === '/' ? '' : config.pathPrefix
 
-const {
-  NODE_ENV,
-  URL: NETLIFY_SITE_URL = 'https://toddtest.netlify.com',
-  DEPLOY_PRIME_URL: NETLIFY_DEPLOY_URL = NETLIFY_SITE_URL,
-  CONTEXT: NETLIFY_ENV = NODE_ENV,
-} = process.env
-const isNetlifyProduction = NETLIFY_ENV === 'production'
-const siteUrl = isNetlifyProduction ? NETLIFY_SITE_URL : NETLIFY_DEPLOY_URL
+
 
 module.exports = {
   siteMetadata: {
@@ -40,6 +33,21 @@ module.exports = {
       },
     },
     
+    
+    {
+    resolve: "gatsby-plugin-netlify-cache",
+    options: {
+      extraDirsToCache: [
+        "img/favorites",
+        "img/gallery1",
+        "img/gallery6",
+        "extra/splashscreens"
+      ]
+    }
+  },
+  
+  
+    
 { 
       resolve: `gatsby-plugin-purgecss`,
       options: {
@@ -52,27 +60,7 @@ module.exports = {
       }
     },
     
-    {
-      resolve: 'gatsby-plugin-robots-txt',
-      options: {
-        resolveEnv: () => NETLIFY_ENV,
-        env: {
-          production: {
-            policy: [{ userAgent: '*' }],
-          },
-          'branch-deploy': {
-            policy: [{ userAgent: '*', disallow: ['/'] }],
-            sitemap: null,
-            host: null,
-          },
-          'deploy-preview': {
-            policy: [{ userAgent: '*', disallow: ['/'] }],
-            sitemap: null,
-            host: null,
-          },
-        },
-      },
-    },
+
   
     
     {
