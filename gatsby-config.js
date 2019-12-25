@@ -2,8 +2,11 @@ const config = require('./config')
 
 const pathPrefix = config.pathPrefix === '/' ? '' : config.pathPrefix
 
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> parent of 2b38d3e... big update
 module.exports = {
   siteMetadata: {
     title: config.siteTitle,
@@ -49,8 +52,11 @@ module.exports = {
          purgeOnly : ['/animate.css', '/custom.css', '/noscript.css'], // Purge only these files/folders
       }
     },
+<<<<<<< HEAD
     
 
+=======
+>>>>>>> parent of 2b38d3e... big update
   
     
     {
