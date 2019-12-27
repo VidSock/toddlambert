@@ -105,13 +105,13 @@ const Gal1Page = () => {
 
 <section className="about1 outer section" style={{paddingTop:'0', overflow:'hidden',}}>
 
- <ScrollAnimation animateIn="bounceInDown" animateOut="bounceOutUp" animateOnce={false} delay={1200} style={{ zIndex:'1',}}> 
+
 <div className="container" style={{margin:'1rem 8%',}}>
 <h3 className="logotype" style={{textAlign:'center', fontSize:'250%',}}>
 Portfolio
 </h3>
 </div>
-</ScrollAnimation>
+
 
 
 <div className="split nowrap" style={{display:'flex', justifyContent:'center', alignItems:'center', flexWrap:'no-wrap', position:'relative',  width:'92%', margin:'0 auto', padding:'1rem', borderRadius:'12px', overflow:'',}}>
@@ -142,13 +142,13 @@ My experience has taught me that good design is not created on a spur of the mom
  
  
  {/* SKILLS TIMELINE */}
- <ScrollAnimation animateIn="bounceInUp" animateOut="bounceOutDown" animateOnce={false} delay={100} style={{ zIndex:'1',}}>
+
 <div className="container">
 <h3 className="logotype" style={{textAlign:'center', fontSize:'250%',}}>
 Hats worn
 </h3>
 </div>
-</ScrollAnimation>
+
 
 <div className="split nowrap" style={{display:'flex', justifyContent:'center', alignItems:'center', flexWrap:'no-wrap', position:'relative',  width:'92%', margin:'0 auto', padding:'1rem', borderRadius:'12px', overflow:'',}}>
  <ScrollAnimation animateIn="slideInLeft" animateOut="slideOutLeft" animateOnce={false} delay={0} style={{width:'70%', zIndex:'1',}}>    
@@ -285,13 +285,13 @@ Success online is not simply throwing numbers(visitors) at something. I&apos;ve 
 
 
 
- <ScrollAnimation animateIn="bounceInUp" animateOut="bounceOutDown" animateOnce={false} delay={100} style={{ zIndex:'1',}}>
+
 <div className="container">
 <h3 className="logotype" style={{textAlign:'center', fontSize:'250%',}}>
 spotlight
 </h3>
 </div>
-</ScrollAnimation>
+
 </section>
 
 
@@ -315,7 +315,7 @@ spotlight
 
 
 
- <ScrollAnimation animateIn="bounceInUp" animateOut="bounceOutDown" animateOnce={false} delay={100} style={{ zIndex:'1',}}>
+ <ScrollAnimation animateIn="bounceInUp" animateOut="bounceOutDown" animateOnce={false} delay={100} style={{ zIndex:'1', display:'none',}}>
 <div className="container">
 <h3 className="logotype" style={{textAlign:'center', fontSize:'250%',}}>
 Client List

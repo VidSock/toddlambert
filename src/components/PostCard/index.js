@@ -22,7 +22,7 @@ const PostCard = ({ posts }) => {
               {post.excerpt}
               <br />
               <br />
-              <Link className='button is-small' to={post.fields.slug} style={{textAlign:'right', display:'block',}}>
+              <Link className='button is-small' to={post.fields.slug} style={{textAlign:'left',}}>
                                 Keep Reading →
               </Link>
             </p>
