@@ -88,7 +88,7 @@ export default class BlogPage extends Component {
     return (
       <Layout>
         <Helmet>
-          <title>Blog | Gatsby Starter Business</title>
+          <title>Blog | Todd Lambert</title>
           {/* Schema.org tags */}
           <script type='application/ld+json'>
             {JSON.stringify(websiteSchemaOrgJSONLD)}
@@ -111,9 +111,11 @@ export default class BlogPage extends Component {
 
           <PostCard posts={group} />
           
-<div className='buttons is-centered'>
-<PaginationLink test={first} url={previousUrl} text='Previous Page' className="grad" />
-<PaginationLink test={last} url={nextUrl} text='Next Page' />
+<div className='buttons' style={{display:'flex', marginTop:'1.5rem',}}>
+
+<div style={{marginRight:'1rem',}}><PaginationLink test={first} url={previousUrl} text='previous posts' className="grad" style={{}} /></div>
+
+<div><PaginationLink test={last} url={nextUrl} text='more posts' /></div>
 </div>
 
 </div>

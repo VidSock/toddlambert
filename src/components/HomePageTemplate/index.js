@@ -110,7 +110,7 @@ const HomePageTemplate = ({
 
 
 
-
+<ScrollAnimation animateIn="bounceInLeft" delay={0}>
 <div className='container innerpanel' style={{padding:'2% 3%', borderRadius:'12px',}}>
 
 <h1 className='title' style={{textAlign:'center',}}>{title}</h1>
@@ -128,7 +128,7 @@ const HomePageTemplate = ({
 
 
 </div>
-
+</ScrollAnimation>
 
 <div className="sidebar" style={{padding:'1%', minWidth:'35%', maxWidth:'35%', marginLeft:'2%',}}>
     
@@ -138,7 +138,7 @@ const HomePageTemplate = ({
 
 
 
-
+<ScrollAnimation animateIn="bounceInRight" delay={0}>
 
 <div className="container content" style={{margin:'0 0 1rem 0', padding:'2% 0', borderRadius:'10px',}}>
 <h3 className="logotype" style={{textAlign:'center', fontSize:'180%',}}>
@@ -165,7 +165,7 @@ Network
     <br />
     Take a walk on the wild side and follow along as Todd Lambert goes in search of the creepiest, freakiest, spookiest abandoned locations you can find anywhere.    
     <h5 style={{textAlign:'center',}}>Visit UrbanFetish.com</h5></a>
-    
+    </ScrollAnimation>
     </div>
     </div>
 
