@@ -60,7 +60,7 @@ module.exports = {
         // tailwind: true, // Enable tailwindcss support
         // whitelist: ['headroom', 'headroom--unfixed'], // Don't remove this selector
          //ignore: ['index.css'], // Ignore files/folders
-         purgeOnly : ['/animate.css', '/custom.css', '/noscript.css'], // Purge only these files/folders
+         purgeOnly : ['/index.css', '/animate.css', '/custom.css', '/noscript.css'], // Purge only these files/folders
       }
     },
     
