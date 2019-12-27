@@ -335,11 +335,11 @@ Client List
 <br />
 <br />
     
-<ScrollAnimation className="noprint" animateIn="bounceInUp" animateOut="fadeOut" initiallyVisible={false} animateOnce={true} animatePreScroll={false}>
+
 <div className="content outer">
     <Contact />
     </div>
-</ScrollAnimation>
+
 
       
     </Layout>
