@@ -222,7 +222,7 @@ main{min-height: 60vh;}//force v-scroll
 .react-images__header span{background-color:#222; border:1px solid white;}
 
 
-.menu li:first-child [aria-current]{border-left:1px solid #000}
+.menu li:first-child [aria-current]{border-left:0px solid #000}
   
  [aria-current].logolink, [aria-current].logolink:before  {
   background: none !important;

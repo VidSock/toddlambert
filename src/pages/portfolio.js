@@ -23,10 +23,8 @@ align-items: center;
 justify-content: center;
 z-index:1;
 font-size:250%; color:#f8f8fc; text-shadow: 12px 7px 15px 12px white;
-/*
-font-family:Lobster Two;
-text-transform:lowercase;
-*/
+animation: poof 1s forwards;
+animation-delay: 1s;
 }
 
 
@@ -116,7 +114,7 @@ Portfolio
 
 <div className="split nowrap" style={{display:'flex', justifyContent:'center', alignItems:'center', flexWrap:'no-wrap', position:'relative',  width:'92%', margin:'0 auto', padding:'1rem', borderRadius:'12px', overflow:'',}}>
 
- <ScrollAnimation animateIn="slideInLeft" animateOut="slideOutLeft" animateOnce={false} delay={1200} style={{width:'70%', zIndex:'1',}}>    
+ <ScrollAnimation animateIn="slideInLeft" animateOut="" animateOnce={true} delay={100} style={{width:'70%', zIndex:'1',}}>    
 <div className="container speech" style={{ width:'95%', borderRadius:'12px', margin:'0', padding:'', order:'1', position:'relative', boxShadow: '0px 0px 5px 0px black', }}>
 
 <p>
@@ -129,7 +127,7 @@ My experience has taught me that good design is not created on a spur of the mom
 </div>
 </ScrollAnimation>
 
- <ScrollAnimation animateIn="slideInRight" animateOut="slideOutRight" animateOnce={false} delay={1200} style={{width:'30%', padding:'0', order:'2 !important',  zIndex:'0',}}>    
+ <ScrollAnimation animateIn="slideInRight" animateOut="" animateOnce={true} delay={100} style={{width:'30%', padding:'0', order:'2 !important',  zIndex:'0',}}>    
 
 <div className="imgbox grad" style={{border:'4px solid #fff', position:'relative', margin:'0 0 0 0', borderRadius:'50%', padding:'1rem', overflow:'hidden'}}><Image alt="Co-worker talks about Todd Lambert" filename="todd-toon.png" style={{borderColor:'transparent',}} />
 <div className="txtshadow" style={{position:'absolute', left:'0', bottom:'5px', fontSize:'70%', color:'#ddd', textAlign:'center', width:'100%',}}>Todd Lambert</div>
@@ -151,7 +149,7 @@ Hats worn
 
 
 <div className="split nowrap" style={{display:'flex', justifyContent:'center', alignItems:'center', flexWrap:'no-wrap', position:'relative',  width:'92%', margin:'0 auto', padding:'1rem', borderRadius:'12px', overflow:'',}}>
- <ScrollAnimation animateIn="slideInLeft" animateOut="slideOutLeft" animateOnce={false} delay={0} style={{width:'70%', zIndex:'1',}}>    
+ <ScrollAnimation animateIn="slideInLeft" animateOut="" animateOnce={true} delay={0} style={{width:'70%', zIndex:'1',}}>    
 <div className="container speech1" style={{ width:'95%', borderRadius:'12px', margin:'0', padding:'', order:'1', position:'relative',}}>
 
 <h2>Entrepreneur</h2>
@@ -162,7 +160,7 @@ Being a self-starter and self-learner are the basic fundamentals of a natural en
 </div>
 </ScrollAnimation>
 
- <ScrollAnimation animateIn="slideInRight" animateOut="slideOutRight" animateOnce={false} delay={100} style={{width:'30%', padding:'5%', order:'2 !important',  zIndex:'0',}} className="color">    
+ <ScrollAnimation animateIn="slideInRight" animateOut="" animateOnce={true} delay={100} style={{width:'30%', padding:'5%', order:'2 !important',  zIndex:'0',}} className="color">    
 
 <Image alt="Co-worker talks about Todd Lambert" filename="hats1.png" style={{borderColor:'transparent',}} />
 
@@ -175,14 +173,14 @@ Being a self-starter and self-learner are the basic fundamentals of a natural en
  
  <div className="split nowrap" style={{display:'flex', justifyContent:'center', alignItems:'center', flexWrap:'no-wrap', position:'relative',  width:'92%', margin:'0 auto', padding:'1rem', borderRadius:'12px', overflow:'',}}>
  
-  <ScrollAnimation animateIn="slideInLeft" animateOut="slideOutLeft" animateOnce={false} delay={100} style={{width:'30%', padding:'5%', order:'2 !important',  zIndex:'0',}} className="color">    
+  <ScrollAnimation animateIn="slideInLeft" animateOut="" animateOnce={true} delay={100} style={{width:'30%', padding:'5%', order:'2 !important',  zIndex:'0',}} className="color">    
 
 <Image className="color" alt="Co-worker talks about Todd Lambert" filename="hats2.png" style={{borderColor:'transparent',}} />
 
 </ScrollAnimation>
 
 
- <ScrollAnimation animateIn="slideInRight" animateOut="slideOutRight" animateOnce={false} delay={0} style={{width:'70%', zIndex:'1',}}>    
+ <ScrollAnimation animateIn="slideInRight" animateOut="" animateOnce={true} delay={0} style={{width:'70%', zIndex:'1',}}>    
 <div className="container speech1" style={{ width:'95%', borderRadius:'12px', margin:'0', padding:'', order:'1', position:'relative',}}>
 
 <h2>Webmaster</h2>
@@ -198,7 +196,7 @@ Back in the day, a webmaster learned that a full tool box was needed for web des
  
  
  <div className="split nowrap" style={{display:'flex', justifyContent:'center', alignItems:'center', flexWrap:'no-wrap', position:'relative',  width:'92%', margin:'0 auto', padding:'1rem', borderRadius:'12px', overflow:'',}}>
- <ScrollAnimation animateIn="slideInLeft" animateOut="slideOutLeft" animateOnce={false} delay={0} style={{width:'70%', zIndex:'1',}}>    
+ <ScrollAnimation animateIn="slideInLeft" animateOut="" animateOnce={true} delay={0} style={{width:'70%', zIndex:'1',}}>    
 <div className="container speech1" style={{ width:'95%', borderRadius:'12px', margin:'0', padding:'', order:'1', position:'relative',}}>
 
 <h2>Designer</h2>
@@ -209,7 +207,7 @@ Over the years I&apos;ve spent inordinate amounts of time learning Typography, S
 </div>
 </ScrollAnimation>
 
- <ScrollAnimation animateIn="slideInRight" animateOut="slideOutRight" animateOnce={false} delay={100} style={{width:'30%', padding:'5%', order:'2 !important',  zIndex:'0',}} className="color">    
+ <ScrollAnimation animateIn="slideInRight" animateOut="" animateOnce={true} delay={100} style={{width:'30%', padding:'5%', order:'2 !important',  zIndex:'0',}} className="color">    
 
 <Image className="color" alt="Co-worker talks about Todd Lambert" filename="hats3.png" style={{borderColor:'transparent',}} />
 
@@ -220,14 +218,14 @@ Over the years I&apos;ve spent inordinate amounts of time learning Typography, S
  
   <div className="split nowrap" style={{display:'flex', justifyContent:'center', alignItems:'center', flexWrap:'no-wrap', position:'relative',  width:'92%', margin:'0 auto', padding:'1rem', borderRadius:'12px', overflow:'',}}>
  
-  <ScrollAnimation animateIn="slideInLeft" animateOut="slideOutLeft" animateOnce={false} delay={100} style={{width:'30%', padding:'5%', order:'2 !important',  zIndex:'0',}} className="color">    
+  <ScrollAnimation animateIn="slideInLeft" animateOut="" animateOnce={true} delay={100} style={{width:'30%', padding:'5%', order:'2 !important',  zIndex:'0',}} className="color">    
 
 <Image alt="Co-worker talks about Todd Lambert" filename="hats4.png" style={{borderColor:'transparent',}} />
 
 </ScrollAnimation>
 
 
- <ScrollAnimation animateIn="slideInRight" animateOut="slideOutRight" animateOnce={false} delay={0} style={{width:'70%', zIndex:'1',}}>    
+ <ScrollAnimation animateIn="slideInRight" animateOut="" animateOnce={true} delay={0} style={{width:'70%', zIndex:'1',}}>    
 <div className="container speech1" style={{ width:'95%', borderRadius:'12px', margin:'0', padding:'', order:'1', position:'relative',}}>
 
 <h2>Developer</h2>
@@ -242,7 +240,7 @@ As the Internet became more complicated I immersed myself in different programmi
  
  
   <div className="split nowrap" style={{display:'flex', justifyContent:'center', alignItems:'center', flexWrap:'no-wrap', position:'relative',  width:'92%', margin:'0 auto', padding:'1rem', borderRadius:'12px', overflow:'',}}>
- <ScrollAnimation animateIn="slideInLeft" animateOut="slideOutLeft" animateOnce={false} delay={0} style={{width:'70%', zIndex:'1',}}>    
+ <ScrollAnimation animateIn="slideInLeft" animateOut="" animateOnce={true} delay={0} style={{width:'70%', zIndex:'1',}}>    
 <div className="container speech1" style={{ width:'95%', borderRadius:'12px', margin:'0', padding:'', order:'1', position:'relative',}}>
 
 <h2>Marketer</h2>
@@ -253,7 +251,7 @@ I&apos;ve been on the Internet since the beginning. I&apos;ve become adept at de
 </div>
 </ScrollAnimation>
 
- <ScrollAnimation animateIn="slideInRight" animateOut="slideOutRight" animateOnce={false} delay={100} style={{width:'30%', padding:'5%', order:'2 !important',  zIndex:'0',}} className="color">    
+ <ScrollAnimation animateIn="slideInRight" animateOut="" animateOnce={true} delay={100} style={{width:'30%', padding:'5%', order:'2 !important',  zIndex:'0',}} className="color">    
 
 <Image alt="Co-worker talks about Todd Lambert" filename="hats5.png" style={{borderColor:'transparent',}} />
 
@@ -263,14 +261,14 @@ I&apos;ve been on the Internet since the beginning. I&apos;ve become adept at de
  
  <div className="split nowrap" style={{display:'flex', justifyContent:'center', alignItems:'center', flexWrap:'no-wrap', position:'relative',  width:'92%', margin:'0 auto', padding:'1rem', borderRadius:'12px', overflow:'',}}>
  
-  <ScrollAnimation animateIn="slideInLeft" animateOut="slideOutLeft" animateOnce={false} delay={100} style={{width:'30%', padding:'5%', order:'2 !important',  zIndex:'0',}} className="color">    
+  <ScrollAnimation animateIn="slideInLeft" animateOut="" animateOnce={true} delay={100} style={{width:'30%', padding:'5%', order:'2 !important',  zIndex:'0',}} className="color">    
 
 <Image alt="Co-worker talks about Todd Lambert" filename="hats6.png" style={{borderColor:'transparent',}} />
 
 </ScrollAnimation>
 
 
- <ScrollAnimation animateIn="slideInRight" animateOut="slideOutRight" animateOnce={false} delay={0} style={{width:'70%', zIndex:'1',}}>    
+ <ScrollAnimation animateIn="slideInRight" animateOut="" animateOnce={true} delay={0} style={{width:'70%', zIndex:'1',}}>    
 <div className="container speech1" style={{ width:'95%', borderRadius:'12px', margin:'0', padding:'', order:'1', position:'relative',}}>
 
 <h2>Analyst</h2>
