@@ -10,7 +10,7 @@ tags:
   - css
   - mock
   - user interface
-  - dream
+  - dreams
 meta_title: A small test-case in designing the sale of money.
 meta_description: >-
   What started as a test page setup to try out some new interface components I
