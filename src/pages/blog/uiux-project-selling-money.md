@@ -2,7 +2,7 @@
 templateKey: article-page
 title: 'UiUx Project : Selling Money'
 slug: selling-money
-date: 2020-01-12T20:51:21.967Z
+date: 2020-01-05T20:51:21.967Z
 cover: /img/tle-portfolio-css-html.jpg
 tags:
   - money
