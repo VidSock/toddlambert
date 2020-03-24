@@ -13,7 +13,7 @@ module.exports = {
   userTwitter: 'toddlambert',
   userLocation: 'Gulf Coast, USA',
   userDescription: '',
-  copyright: 'Copyright © Todd Lambert Enterprises 1999-2019. All Rights Reserved.', // Copyright string for the footer of the website and RSS feed.
+  copyright: 'Copyright © Todd Lambert Enterprises 1999-2020. All Rights Reserved.', // Copyright string for the footer of the website and RSS feed.
   themeColor: '#dd4000', // Used for setting manifest and progress theme colors.
   backgroundColor: '#222222', // Used for setting manifest background color.
 }

@@ -5,18 +5,23 @@ import config from '../../config'
 import Helmet from 'react-helmet'
 import PostCard from '../components/PostCard'
 import Layout from '../components/Layout'
-
+import Intro2 from '../components/Intro2'
 import styled from "styled-components"
 
 const CustomBox = styled.div`
 *, *:before, *:after { box-sizing: border-box; }
 
-.intro img{border-radius:6px !important;}
-
-
-
-
-
+.intro:before{
+	content: "Todd Leads A Dual-Life";
+position:absolute;
+display: flex;
+align-items: center;
+justify-content: center;
+font-size:280%; color:#f8f8fc; text-shadow: 12px 7px 15px 12px black;
+animation: poof 1s forwards;
+animation-delay: 1s;
+top:0 !important;
+}
 
 .image-wrap {
   width: 100%;
@@ -32,24 +37,32 @@ const CustomBox = styled.div`
 }
 
 
-@media (min-width: 58rem) {
-.content {padding:0 !important;}
+
+
+@media (min-width: 48em) {
+
+  .boom1{font-size:380% !important;}
+  .boom2{font-size:250% !important;}
+  .boom3{font-size:380% !important;}
+  .boom4{font-size:280% !important;}
+
 }
 
+@media (max-width: 48em) {
 
-@media (max-width: 48rem) {
-
-
+  .image-wrap {height:auto !important; min-height:300px !important;}
+  
   .intro:before{font-size:150% !important}
   .content{flex-direction:column !important;}
   .content .stack{width:100% !important; margin:0 !important; background:tranparent !important;}
   .pitch{font-size:250% !important; text-align:center;}
   .split {display:block !important; width:100% !important; }
-  .split div{max-width:100% !important; with:100% !important; background:tranparent !important;}
-  .sidebar{margin:2% 0;}
-  .sidebar{max-width:100% !important; width:100% !important; background:tranparent !important;}
+  .split div{max-width:100% !important; background:tranparent !important;}
+  .sidebar{margin:2rem 0;}
   .sidebar .logolink{text-align:center !important;}
 }
+
+
 
 
 `
@@ -89,6 +102,7 @@ export default class BlogPage extends Component {
       <Layout>
         <Helmet>
           <title>Blog | Todd Lambert</title>
+          <html className="fullhead" />
           {/* Schema.org tags */}
           <script type='application/ld+json'>
             {JSON.stringify(websiteSchemaOrgJSONLD)}
@@ -101,7 +115,7 @@ export default class BlogPage extends Component {
 <h1 className='logotype'>Blog</h1>
 
 </div> */}
-
+<Intro2 />
 
 <section className="section intro split" style={{display:'flex', padding:'0 2%', position:'relative',}}>
         

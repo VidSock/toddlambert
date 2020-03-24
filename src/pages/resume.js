@@ -25,6 +25,8 @@ font-size:380%; color:#f8f8fc; text-shadow: 12px 7px 15px 12px black;
 */
 
 
+.primary p{margin:0 0 .5rem 0 !important; padding:0!important;}
+
 .edu li{margin:2rem 0;}
 
 h2{color:#dd4000}
@@ -132,11 +134,11 @@ Lambert
 	
 	<h2 className="todd-headline">Highlights</h2>
 
-<p><strong>Product Designer - Skilled web designer/developer with over 15 years of professional experience.</strong></p>
-
-<p>Proven record of completing bold, clean, and effective designs with consistent performance ahead of schedule and under budget.</p>
+<p><strong>Product Designer - Skilled web designer/developer with 21 years of professional experience.</strong></p>
 
 <p>Successful product designer able to integrate both technical and creative skills to create cross-browser and cross-platform solutions with modern web architecture and navigation systems.</p>
+
+<p>Proven record of completing bold, clean, and effective designs with consistent performance ahead of schedule and under budget.</p>
 
 <p>Industry experience including semiconductor, hospitality, entertainment, health, publishing, finance, insurance, construction, computer software, and direct marketing.</p>
 
@@ -179,28 +181,32 @@ High School General Courses - Diploma</li>
 <h2 className="todd-headline">Professional Experience</h2>
 
 <p><strong>Todd Lambert Enterprises, 1999 - Present</strong><br />
-<em>Sole Proprietor / Photographer</em>
-<br /><br />
-Conducted all facets of web development business including meeting with clients, selling web services, and developing methods for improved customer support. <br /><br /> I also like to travel and photograph spooky and abandoned places, at night, all by myself and all over the country.</p>
+<em>Sole Proprietor / Photographer</em></p>
+
+<p>Conducted all facets of web development business including meeting with clients, selling web services, and developing methods for improved customer support. <br /> I also like to travel all over the country and photograph spooky and abandoned places at night. <a style={{color:'#333'}} href="https://twilightscapes.com">View @ TwilightScapes.com</a></p>
 
 <p><strong>Primal Health, 2013 - 2014</strong><br /> 
 <em>Creative Director / Associate Developer</em>
-<br /><br />
+</p>
+<p>
 Responsible for all graphic components and direct marketing efforts. Worked with various departments to advance reach through social marketing, engineering and analytics. Also performed SEO and conducted extensive AB testing.</p>
 
 <p><strong>Texas Instruments, 2010 - 2013</strong><br /> 
 <em>Style Architect / Front End Developer / Senior UI Designer</em>
-<br /><br />
+</p>
+<p>
 Worked on all aspects of TIs website, from new ad campaigns and interactive widgets to the core infrastructure including a new re-design and replacement of site navigation site-wide. Championed responsive design techniques and other modern architecture for use on corporate site. Utilized Jquery animation for replacing all of TIs legacy Flash files.</p>
 
 <p><strong>AGJ Systems &amp; Networks, 2008 - 2010 </strong><br />
 <em>Web Director / Lead Developer / Senior Designer</em>
-<br /><br />
-Solely responsible for all design and development aspects of web department. Interacted with customers and other departments to integrate designs into modern, full-featured websites catered to customer needs.</p>
+</p>
+<p>
+Solely responsible for all design and development aspects of web department. Interacted with customers and other departments to integrate designs into modern websites catered to customer needs.</p>
 
 <p><strong>TeleVox Software, 2004 - 2007</strong><br />
 <em>Director of Web Development</em>
-<br /><br />
+</p>
+<p>
 Responsible for site architecture, design, graphics, programming, copywriting/editing, project management of all TeleVox websites and online marketing campaigns. Supervised 25 designers and developers.</p>
 
 

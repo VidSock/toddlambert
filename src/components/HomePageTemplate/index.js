@@ -7,6 +7,7 @@ import PropTypes from 'prop-types'
 import Image from '../Image'
 import { graphql } from 'gatsby'
 import { HTMLContent } from '../Content'
+
 import Contact from '../Contact-inc'
 import ScrollAnimation from 'react-animate-on-scroll'
 // import PopNewsletter from '../PopNewsletter'
@@ -27,8 +28,8 @@ display: flex;
 align-items: center;
 justify-content: center;
 font-size:280%; color:#f8f8fc; text-shadow: 12px 7px 15px 12px black;
-animation: poof 1.5s forwards;
-animation-delay: 1.5s;
+animation: poof 1s forwards;
+animation-delay: 1s;
 top:0 !important;
 }
 
@@ -106,11 +107,11 @@ const HomePageTemplate = ({
 {/* <Intro2 /> */}
 {/* <Intro3 /> */}
 <Intro2 />
-<section className="section split" style={{display:'flex', padding:'2%', position:'relative',}}>
+<section className="section split" style={{display:'none', padding:'2%', position:'relative',}}>
 
 
 
-<ScrollAnimation animateIn="bounceInLeft" delay={0}>
+<ScrollAnimation animateIn="fadeIn" delay={0} animateOnce={true}>
 <div className='container innerpanel' style={{padding:'2% 3%', borderRadius:'12px',}}>
 
 <h1 className='title' style={{textAlign:'center',}}>{title}</h1>
@@ -120,6 +121,9 @@ const HomePageTemplate = ({
 <h3 className="" style={{textAlign:'center',}}>
 {heading}
 </h3>
+
+
+{/* <PostCard posts={group} /> */}
 
 </div>
 
@@ -138,7 +142,7 @@ const HomePageTemplate = ({
 
 
 
-<ScrollAnimation animateIn="bounceInRight" delay={0}>
+<ScrollAnimation animateIn="fadeIn" delay={0} animateOnce={true}>
 
 <div className="container content" style={{margin:'0 0 1rem 0', padding:'2% 0', borderRadius:'10px',}}>
 <h3 className="logotype" style={{textAlign:'center', fontSize:'180%',}}>
