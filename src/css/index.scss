@@ -9,6 +9,20 @@ $primary: #dd4000;
 $red: #ff0000;
 
 
+
+#eow{display:none;}
+div.fucked {
+    display:block !important;
+    position: absolute;
+    
+    
+    width: 50vw;
+    height: 50vh;
+    margin:10% 25%;
+    background: red;
+    z-index:2;
+}
+
 #herohead .headroom-wrapper{height:0 !important; position:relative;}
 
 

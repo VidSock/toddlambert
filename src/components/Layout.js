@@ -38,13 +38,13 @@ const TemplateWrapper = ({ children }) => {
 
   const { title, description } = useSiteMetadata()
   return (
-    <><div id="topofpage" name="topofpage"> </div>
+    <>
       <Helmet>
         <html lang="en" />
         <title>{config.siteTitle}</title>
           <meta name='description' content={config.siteDescription} />
 
-        
+        <script src={withPrefix('script.js')} type="text/javascript" />
 
         <meta property="og:type" content="business.business" />
         <meta property="og:title" content={title} />
@@ -128,6 +128,10 @@ const TemplateWrapper = ({ children }) => {
 
       </Helmet>
       
+      <div id="topofpage" name="topofpage"> </div>
+      <div id="eow">
+      It's the end of the world and I feel dead.
+      </div>
  
       <Navbar />
       <PopContact />

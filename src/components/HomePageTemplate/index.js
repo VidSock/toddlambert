@@ -21,6 +21,17 @@ import Intro2 from '../Intro2'
 const CustomBox = styled.div`
 *, *:before, *:after { box-sizing: border-box; }
 
+
+div.locked {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: red;
+}
+
+
 .intro:before{
 	content: "Todd Leads A Dual-Life";
 position:absolute;
@@ -93,6 +104,7 @@ const HomePageTemplate = ({
       <title>{meta_title}</title>
       <meta name='description' content={meta_description} />
       <html className="fullhead" />
+
     </Helmet>
     
     
@@ -102,6 +114,8 @@ const HomePageTemplate = ({
 
 
 <CustomBox>
+
+
 <div className="intro">
 {/* <Intro1 /> */}
 {/* <Intro2 /> */}
