@@ -1,4 +1,4 @@
-    var end = new Date('2020-05-01');
+    var end = new Date('2020-06-01');
     var now = new Date();
     if (end - now <= 0) {
 
