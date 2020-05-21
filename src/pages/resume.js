@@ -28,9 +28,10 @@ font-size:380%; color:#f8f8fc; text-shadow: 12px 7px 15px 12px black;
 .primary p{margin:0 0 .5rem 0 !important; padding:0!important;}
 
 .edu li{margin:2rem 0;}
+.todd-headline{margin:0 0 1rem 0;}
 
 h2{color:#dd4000}
-// .headroom--unfixed header{width:100%; margin:0 auto; border:0px solid red !important;}
+
 
 
 
@@ -143,7 +144,7 @@ Lambert
 <p>Industry experience including semiconductor, hospitality, entertainment, health, publishing, finance, insurance, construction, computer software, and direct marketing.</p>
 
   
-<h2 className="todd-headline">Proficiency</h2>
+<h2 className="todd-headline" style={{marginBottom:''}}>Proficiency</h2>
 
 <p>Veteran WordPress Theme/Plugin Developer <br />React JS Frontend Designer/Developer</p>
 
@@ -153,7 +154,7 @@ Lambert
 
 <p><strong>I prefer: JAM stack, React, Gatsby, Canon, Subaru and my Mac.</strong></p>
 
-<br />
+
 <h2 className="todd-headline">Education</h2>
 
 <ul className="edu">
@@ -180,7 +181,8 @@ High School General Courses - Diploma</li>
 	
 <h2 className="todd-headline">Professional Experience</h2>
 
-<p><strong>Todd Lambert Enterprises, 1999 - Present</strong><br />
+<p style={{margin: '0 0 .5rem 0 ',
+padding: '0'}}><strong>Todd Lambert Enterprises, 1999 - Present</strong><br />
 <em>Sole Proprietor / Photographer</em></p>
 
 <p>Conducted all facets of web development business including meeting with clients, selling web services, and developing methods for improved customer support. <br /> I also like to travel all over the country and photograph spooky and abandoned places at night. <a style={{color:'#333'}} href="https://twilightscapes.com">View @ TwilightScapes.com</a></p>
