@@ -192,11 +192,11 @@ Network
 
 </section>
 
-<ScrollAnimation animateIn="bounceInUp" delay={0}>
+{/* <ScrollAnimation animateIn="bounceInUp" delay={0}>
 <div className="outer">
     <Contact className="container contactform" />
 </div>
-</ScrollAnimation>
+</ScrollAnimation> */}
 <br />
     
     </div>
