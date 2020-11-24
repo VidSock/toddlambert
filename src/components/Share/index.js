@@ -10,7 +10,7 @@ import {
 
 } from 'react-share'
 import config from '../../../config'
-import './styles.sass'
+// import './styles.sass'
 
 class Share extends Component {
   render () {

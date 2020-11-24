@@ -44,7 +44,7 @@ const TemplateWrapper = ({ children }) => {
         <title>{config.siteTitle}</title>
           <meta name='description' content={config.siteDescription} />
 
-        <script src={withPrefix('script.js')} type="text/javascript" />
+        {/* <script src={withPrefix('script.js')} type="text/javascript" /> */}
 
         <meta property="og:type" content="business.business" />
         <meta property="og:title" content={title} />
@@ -131,9 +131,9 @@ const TemplateWrapper = ({ children }) => {
 
 
       </Helmet>
-      <div id="eow">
+      {/* <div id="eow">
       It's the end of the world and I feel dead.
-      </div>
+      </div> */}
  
       <Navbar />
       <PopContact />

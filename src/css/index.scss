@@ -474,7 +474,22 @@ footer{background-color: #222; padding:.1rem 0rem;  animation: fadeIn 3s; border
 .socialtext{font-size: 120%; padding:0 0 0 0; margin:0 1rem 0 0; transform: rotate(-14deg); /* transform: rotate3d(1, 1, 1, -20deg); */}
 
 
+.social-links{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  margin: 15px 0;
+}
 
+.social-links > div{
+  margin: 5px 15px;
+}
+.share-count{
+  text-align: center;
+}
 
 
 //  ANIMATIONS
